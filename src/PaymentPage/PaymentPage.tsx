@@ -60,7 +60,7 @@ const PaymentPage = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Box pt="30px">
+          <Box pt="30px" pb="10px">
             <Flex justifyContent="space-between" alignItems="center">
               <Box>
                 <Text fontWeight="700">Card Number</Text>
@@ -77,28 +77,24 @@ const PaymentPage = () => {
             </Flex>
           </Box>
           <InputGroup mt="20px">
-            <InputLeftAddon height="50px" bgColor="#f9fbfc" borderRight="none">
+            <InputLeftAddon height="60px" bgColor="#f9fbfc" borderRight="none">
               <Image src={masterCard} height="15px" width="25px" />
             </InputLeftAddon>
             <Input
               placeholder="2412   -   7512   -   3412   -   3456"
               _placeholder={{ opacity: "0.5" }}
-              // _focusVisible={{
-              //   borderTop: "2px solid#2c66c1",
-              //   borderBottom: "2px solid#2c66c1",
-              // }}
               bgColor="#f9fbfc"
               borderLeft="none"
               borderRight="none"
               borderColor="#f3f2f5"
-              height="50px"
+              height="60px"
               _focusVisible={{ border: "none", boxShadow: "none" }}
             />
-            <InputRightAddon height="50px" bgColor="#f9fbfc" borderLeft="none">
+            <InputRightAddon height="60px" bgColor="#f9fbfc" borderLeft="none">
               <VscVerifiedFilled color="#00a1f0" fontSize="25px" />
             </InputRightAddon>
           </InputGroup>
-          <Flex justifyContent="space-between" mt="30px" alignItems="center">
+          <Flex justifyContent="space-between" mt="40px" alignItems="center">
             <Box width="50%">
               <Text fontWeight="700">CVV Number</Text>
               <Text color="#000000" fontSize="10px" pt="5px" opacity="0.5">
@@ -111,11 +107,11 @@ const PaymentPage = () => {
                 borderRight="none"
                 bgColor="#f9fbfc"
                 borderColor="#f3f2f5"
-                height="50px"
+                height="60px"
                 _focusVisible={{ border: "none", boxShadow: "none" }}
               />
               <InputRightAddon
-                height="50px"
+                height="60px"
                 bgColor="#f9fbfc"
                 borderLeft="none"
               >
@@ -123,7 +119,7 @@ const PaymentPage = () => {
               </InputRightAddon>
             </InputGroup>
           </Flex>
-          <Flex justifyContent="space-between" mt="30px" alignItems="center">
+          <Flex justifyContent="space-between" mt="40px" alignItems="center">
             <Box>
               <Text fontWeight="700">Expiry Date</Text>
               <Text color="#000000" fontSize="10px" pt="5px" opacity="0.5">
@@ -135,7 +131,7 @@ const PaymentPage = () => {
                 placeholder="09"
                 bgColor="#f9fbfc"
                 borderColor="#f3f2f5"
-                height="50px"
+                height="60px"
                 _focusVisible={{ border: "none", boxShadow: "none" }}
               />
               /
@@ -143,12 +139,12 @@ const PaymentPage = () => {
                 placeholder="22"
                 bgColor="#f9fbfc"
                 borderColor="#f3f2f5"
-                height="50px"
+                height="60px"
                 _focusVisible={{ border: "none", boxShadow: "none" }}
               />
             </Flex>
           </Flex>
-          <Flex justifyContent="space-between" mt="30px" alignItems="center">
+          <Flex justifyContent="space-between" mt="40px" alignItems="center">
             <Box width="50%">
               <Text fontWeight="700">Password</Text>
               <Text color="#000000" fontSize="10px" pt="5px" opacity="0.5">
@@ -160,12 +156,12 @@ const PaymentPage = () => {
                 placeholder="327"
                 bgColor="#f9fbfc"
                 borderColor="#f3f2f5"
-                height="50px"
+                height="60px"
                 borderRight="none"
                 _focusVisible={{ border: "none", boxShadow: "none" }}
               />
               <InputRightAddon
-                height="50px"
+                height="60px"
                 bgColor="#f9fbfc"
                 borderLeft="none"
               >
@@ -177,10 +173,10 @@ const PaymentPage = () => {
             bgColor="#025efe"
             color="white"
             width="100%"
-            mt="40px"
+            mt="50px"
             borderRadius="8px"
             _hover={{ opacity: "0.8" }}
-            height="60px"
+            height="70px"
           >
             Pay Now
           </Button>

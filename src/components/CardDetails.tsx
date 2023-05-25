@@ -77,7 +77,8 @@ const CardDetails = () => {
       </Box>
       <Box
         bg="radial-gradient(circle at top left,transparent 1vw, #e7ecee 0.9vw)"
-        p="30px"
+        px="30px"
+        py="25px"
         borderBottomRadius="20px"
       >
         <Flex justifyContent="space-between" alignItems="center">
