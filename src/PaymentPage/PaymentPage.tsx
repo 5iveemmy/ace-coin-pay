@@ -1,3 +1,4 @@
+import NumberBox from "@/components/NumberBox"
 import { Box, Flex, Text } from "@chakra-ui/react"
 
 const PaymentPage = () => {
@@ -13,21 +14,15 @@ const PaymentPage = () => {
             Pay
           </Text>
         </Flex>
-        <Flex>
-          <Flex>
-            <Flex
-              justifyContent="center"
-              alignItems="center"
-              borderRadius="4px"
-              bgColor="black"
-              color="white"
-              width="20px"
-              height="35px"
-              fontSize="16px"
-              fontWeight="500"
-            >
-              1
-            </Flex>
+        <Flex gap="2px" alignItems="center" justifyContent="center">
+          <Flex gap="2px">
+            <NumberBox num={0} />
+            <NumberBox num={1} />
+          </Flex>
+          :
+          <Flex gap="2px">
+            <NumberBox num={1} />
+            <NumberBox num={9} />
           </Flex>
         </Flex>
       </Flex>
