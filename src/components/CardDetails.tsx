@@ -7,13 +7,24 @@ import WhiteBall from "./WhiteBall"
 
 const CardDetails = () => {
   return (
-    <Box width="30%">
+    <Box position="relative" width={{ base: "full", lg: "30%" }}>
+      <Box
+        bgColor="#025efe"
+        height="6px"
+        width="80px"
+        left="0"
+        right="0"
+        top="-5px"
+        position="absolute"
+        margin="0 auto"
+        boxShadow="1px 6px 20px 1px #5b91f0"
+      />
       <Flex
         pt="40px"
         pb="10px"
         justifyContent="space-between"
         bgColor="white"
-        width="260px"
+        width={{ base: "92%", lg: "260px" }}
         m="0 auto"
         borderTopRadius="20px"
         boxShadow="-1px -16px 20px 20px #f6f6f6"
