@@ -1,7 +1,9 @@
+import PaymentPage from "./PaymentPage/PaymentPage"
+
 function App() {
   return (
     <>
-      <p>yoo</p>
+      <PaymentPage />
     </>
   )
 }
