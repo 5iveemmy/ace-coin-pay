@@ -3,6 +3,7 @@ import receipt from "../assets/receipt.png"
 import masterCard from "../assets/masterCardLogo.png"
 import chip from "../assets/chip.png"
 import { RiWifiFill, TbBrandApple, RxBorderDotted } from "react-icons/all"
+import WhiteBall from "./WhiteBall"
 
 const CardDetails = () => {
   return (
@@ -26,7 +27,7 @@ const CardDetails = () => {
         />
         <RiWifiFill fontSize="30px" />
       </Flex>
-      <Box borderRadius="20px" bgColor="#e7ecee" px="30px">
+      <Box borderTopRadius="20px" bgColor="#e7ecee" px="30px" pb="20px">
         <Box
           bgColor="white"
           borderBottomRadius="20px"
@@ -53,7 +54,7 @@ const CardDetails = () => {
             </Flex>
           </Flex>
         </Box>
-        <Box pt="40px">
+        <Box pt="30px">
           <Flex justifyContent="space-between">
             <Text opacity="0.5">Company</Text>
             <Flex alignItems="center" gap="4px">
@@ -76,11 +77,26 @@ const CardDetails = () => {
         </Box>
       </Box>
       <Box
-        bg="radial-gradient(circle at top left,transparent 1vw, #e7ecee 0.9vw)"
+        bg=" #e7ecee"
         px="30px"
-        py="25px"
+        py="20px"
         borderBottomRadius="20px"
+        position="relative"
+        borderTop="2px solid #b3b3b3"
+        borderTopStyle="dashed"
       >
+        <WhiteBall
+          sx={{
+            top: "-15px",
+            left: "-15px",
+          }}
+        />
+        <WhiteBall
+          sx={{
+            top: "-15px",
+            right: "-15px",
+          }}
+        />
         <Flex justifyContent="space-between" alignItems="center">
           <Box>
             <Text opacity="0.5">You have to Pay</Text>
