@@ -17,6 +17,7 @@ import {
   VscVerifiedFilled,
   TbGridDots,
   IoMdClose,
+  IoWallet,
 } from "react-icons/all"
 import masterCard from "../assets/masterCardLogo.png"
 
@@ -35,12 +36,18 @@ const PaymentPage = () => {
         <Box width="65%">
           <Flex justifyContent="space-between">
             <Flex gap="10px">
-              <Box
+              <Flex
+                justifyContent="center"
+                alignItems="center"
                 bgColor="#025efe"
                 height="30px"
                 width="30px"
                 borderRadius="full"
-              />
+              >
+                <Box transform="rotate(-15deg)">
+                  <IoWallet color="white" opacity="0.9" />
+                </Box>
+              </Flex>
               <Text fontSize="20px">
                 <Text as="span" fontWeight="800">
                   AceCoin
