@@ -23,17 +23,18 @@ import masterCard from "../assets/masterCardLogo.png"
 
 const PaymentPage = () => {
   return (
-    <Container maxW="1100">
+    <Container maxW="1100" px={{ base: "50px", lg: "0px" }}>
       <Flex
         pt="80px"
+        flexDir={{ base: "column", lg: "row" }}
         gap="70px"
-        justifyContent="space-between"
+        justifyContent={{ base: "center", lg: "space-between" }}
         position="relative"
       >
         <Box position="absolute" top="1rem" right="-45px">
           <IoMdClose fontSize="25px" />
         </Box>
-        <Box width="65%">
+        <Box width={{ base: "full", lg: "65%" }}>
           <Flex justifyContent="space-between">
             <Flex gap="10px">
               <Flex
